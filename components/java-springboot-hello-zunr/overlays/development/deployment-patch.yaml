@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: java-springboot-hello-zunr
+  namespace: burrzinga-hac-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/burrzinga-hac-tenant/spring/java-springboot-hello-zunr@sha256:134f1a56427cbd18c3d350ca1d1223be70cdf1f8ec9875af93d11e036654dcc9
+        name: my-java-springboot
+        resources: {}
+status: {}
